@@ -1,16 +1,23 @@
 {
-  "name": "tradepulse",
+  "name": "reconstack-frontend",
   "version": "1.0.0",
-  "description": "TradePulse security dashboard - full stack demo",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "NODE_ENV=development node server.js"
+    "dev": "vite --port 8443",
+    "build": "vite build",
+    "preview": "vite preview --port 8443"
   },
   "dependencies": {
-    "better-sqlite3": "^9.6.0",
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "morgan": "^1.10.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.0"
   }
 }
